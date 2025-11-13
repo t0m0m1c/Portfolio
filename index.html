@@ -85,6 +85,23 @@
         a {
             color: var(--accent);
         }
+        .cert-link a {
+            display: inline-block;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin: 0.3rem;
+            font-size: 0.85rem;
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+
+        .cert-link:hover a {
+            color: var(--accent);
+        }
+
 
         footer {
             text-align: center;
@@ -179,11 +196,11 @@
 <section id="certs" class="section">
     <h2>Certifications</h2>
     <div class="card">
-        <span class="badge"><a href="https://www.credly.com/badges/502e4022-a5ae-4b61-b3b4-b2b73ba3d9b0/linked_in_profile">ISC2 Certified in Cybersecurity</a></span>
-        <span class="badge"><a href="https://learn.microsoft.com/api/credentials/share/en-us/TomomiComber-4565/292087F27A8B0C4F?sharingId">Microsoft AZ-900</a></span>
-        <span class="badge"><a href="https://learn.microsoft.com/api/credentials/share/en-gb/TomomiComber-1538/1153F5A1A3365D3F?sharingId">Microsoft SC-900</a></span>
-        <span class="badge"><a href="https://www.credly.com/badges/a9b88da8-b359-40cf-a5d0-34ca671247c0/linked_in_profile">IT Specialist - Python</a></span>
-        <span class="badge"><a href="https://verify.skilljar.com/c/3ja6j6hsjr9a">Chainalysis Cryptocurrency Fundamentals</a></span>
+        <span class="cert-link"><a href="https://www.credly.com/badges/502e4022-a5ae-4b61-b3b4-b2b73ba3d9b0/linked_in_profile">ISC2 Certified in Cybersecurity</a></span>
+        <span class="cert-link"><a href="https://learn.microsoft.com/api/credentials/share/en-us/TomomiComber-4565/292087F27A8B0C4F?sharingId">Microsoft AZ-900</a></span>
+        <span class="cert-link"><a href="https://learn.microsoft.com/api/credentials/share/en-gb/TomomiComber-1538/1153F5A1A3365D3F?sharingId">Microsoft SC-900</a></span>
+        <span class="cert-link"><a href="https://www.credly.com/badges/a9b88da8-b359-40cf-a5d0-34ca671247c0/linked_in_profile">IT Specialist - Python</a></span>
+        <span class="cert-link"><a href="https://verify.skilljar.com/c/3ja6j6hsjr9a">Chainalysis Cryptocurrency Fundamentals</a></span>
     </div>
 </section>
 
