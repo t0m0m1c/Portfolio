@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Tomomi Comber</title>
+
+    <style>
+        :root {
+            --bg: #0f1115;
+            --text: #e3e3e3;
+            --subtext: #9ca3af;
+            --accent: #4cafef;
+            --card-bg: #16181d;
+            --border: #1f242b;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 0.5rem;
+        }
+
+        p {
+            color: var(--subtext);
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: auto;
+            padding: 3rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: var(--accent);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.8rem;
+            border-radius: 6px;
+            margin: 0.3rem;
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0 4rem;
+            color: var(--subtext);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Tomomi Comber</h1>
+    <p>Cybersecurity | Digital Forensics | Threat Analysis</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="section">
+    <h2>About</h2>
+    <p>
+        As a bilingual cybersecurity professional fluent in Japanese and English, I bring over a decade of experience in client-facing roles across technology and cybersecurity sectors. Currently pursuing a Master’s in Cybersecurity and Forensics, I have a strong foundation in security concepts, hands-on technical skills, and risk management strategies. My background includes advising clients on regulatory compliance, identifying security gaps, and fostering cross-functional collaboration to deliver impactful solutions. Passionate about cybersecurity and continuous learning, I thrive in dynamic environments and am committed to driving measurable improvements while navigating complex challenges.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Skills and Tools</h2>
+    <div class="card">
+        <strong>Security Tools</strong><br><br>
+        <span class="badge">Splunk</span>
+        <span class="badge">Elastic</span>
+        <span class="badge">CrowdStrike</span>
+        <span class="badge">Burp Suite</span>
+        <span class="badge">Wireshark</span>
+        <span class="badge">Autopsy</span>
+        <span class="badge">Magnet Axiom</span>
+        <span class="badge">Cellebrite Reader</span>
+        <span class="badge">Volatility</span>
+        <span class="badge">Kali Linux</span>
+    </div>
+
+    <div class="card">
+        <strong>Domains</strong><br><br>
+        <span class="badge">Threat Detection</span>
+        <span class="badge">Digital Forensics</span>
+        <span class="badge">SOC Analysis</span>
+        <span class="badge">Log Analysis</span>
+        <span class="badge">SIEM</span>
+        <span class="badge">Networking</span>
+        <span class="badge">Phishing Analysis</span>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>CTF Writeups</h3>
+            <p>
+                Writeups on picoCTF (picoGym).
+            </p>
+            <a href="https://medium.com/@t0m0m1/picogym-writeup-information-d9c24f02bde8">View - information </a>
+            <p><a href="https://medium.com/@t0m0m1/picogym-writeup-commitment-issues-1e40517f62f9">View - Commitment Issues</p></a>
+        </div>
+
+        <div class="card">
+            <h3>Setting up OpenBAS Community Edition</h3>
+            <p>
+                Step-by-step guide on setting up OpenBAS Community Edition. 
+            </p>
+            <a href="https://medium.com/@t0m0m1/setting-up-openbas-community-edition-cf3f5d2a032a">View</a>
+        </div>
+        <div class="card">
+            <h3>TryHackMe - SOC Level 1</h3>
+            <p>
+                This path introduces a wide array of essential defensive security topics and real-world analysis scenarios. By completing it, you will gain the knowledge and practical skills needed to become a successful SOC Level 1 Analyst, or to better structure your existing expertise if you are already working in the field. 
+            </p>
+            <a href="https://tryhackme.com/certificate/THM-SHS5GWXOWT">View Certificate</a>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="certs" class="section">
+    <h2>Certifications</h2>
+    <div class="card">
+        <span class="badge"><a href="https://www.credly.com/badges/502e4022-a5ae-4b61-b3b4-b2b73ba3d9b0/linked_in_profile">ISC2 Certified in Cybersecurity</a></span>
+        <span class="badge"><a href="https://learn.microsoft.com/api/credentials/share/en-us/TomomiComber-4565/292087F27A8B0C4F?sharingId">Microsoft AZ-900</a></span>
+        <span class="badge"><a href="https://learn.microsoft.com/api/credentials/share/en-gb/TomomiComber-1538/1153F5A1A3365D3F?sharingId">Microsoft SC-900</a></span>
+        <span class="badge"><a href="https://www.credly.com/badges/a9b88da8-b359-40cf-a5d0-34ca671247c0/linked_in_profile">IT Specialist - Python</a></span>
+        <span class="badge"><a href="https://verify.skilljar.com/c/3ja6j6hsjr9a">Chainalysis Cryptocurrency Fundamentals</a></span>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>GitHub: <a href="#">github.com/t0m0m1c</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/tomomi-c/</a></p>
+</section>
+
+<footer>
+    © <span id="year"></span> Tomomi Comber
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
