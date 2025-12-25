@@ -180,6 +180,25 @@
   font-size: 0.85rem;
   font-weight: 600;
 }
+
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rec-author {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--subtext);
+}
+
     </style>
 </head>
 
@@ -192,6 +211,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#recommendations">Recommendations</a>
         <a href="#certs">Certifications</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -268,6 +288,31 @@
     </div>
 </section>
 
+<section id="recommendations" class="section">
+  <h2>Professional Feedback</h2>
+
+  <div class="two-col">
+    <div class="card">
+        <p>
+      “She is an incredibly dedicated professional with a relentless thirst for knowledge. She is always striving to learn and grow.”
+        </p>
+        <p class="rec-author">
+            — Marketing Strategist
+        </p>
+    </div>
+
+    <div class="card">
+        <p>
+      “Tomomi consistently demonstrates a strong work ethic, attention to detail, and dedication to achieving results.”
+        </p>
+        <p class="rec-author">
+              — GTM Account Executive
+        </p>
+    </div>
+  </div>
+</section>
+
+
 <section id="certs" class="section">
     <h2>Certifications</h2>
      <div class="cert-grid">
@@ -287,12 +332,13 @@
         <p>University of the Sunshine Coast</p>
         <p>February 2023 – Present (Part-time)</p>
         <p style="color: var(--subtext);">GPA: 6.78/7.00</p>
-    
+        
     </div>
   <div class="card">
         <h3>Bachlelor of Arts</h3>
         <p>Sophia University</p>
         <p style="color: var(--subtext);">2007 - 2011 (Completed)</p>
+        <p style="color: var(--subtext);">GPA: 3.79/4.00</p>
     </div>
     </div>
 </section>
